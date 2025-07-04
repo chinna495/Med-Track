@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         :root {
-            --primary: #4a6fa5;
-            --primary-dark: #3a5a8a;
-            --secondary: #6bbf59;
-            --secondary-dark: #5aaa4a;
-            --accent: #ff7e5f;
-            --light: #f8f9fa;
-            --dark: #2d3748;
-            --darker: #1a202c;
-            --gray: #718096;
+            --primary: #3498db;
+            --primary-dark: #2980b9;
+            --secondary: #2ecc71;
+            --secondary-dark: #27ae60;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #34495e;
+            --darker: #2c3e50;
+            --gray: #95a5a6;
             --white: #ffffff;
             --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             --transition: all 0.3s ease;
@@ -34,7 +34,7 @@
         }
 
         body {
-            background-color: #f8f9fa;
+            background-color: #f9fafc;
             color: #333;
             line-height: 1.6;
         }
@@ -81,7 +81,7 @@
         .logo i {
             font-size: 1.8rem;
             margin-right: 10px;
-            color: var(--secondary);
+            color: var(--primary);
         }
 
         .nav-links {
@@ -160,7 +160,7 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.9) 0%, rgba(41, 128, 185, 0.9) 100%);
             color: white;
             padding: 150px 0 100px;
             text-align: center;
@@ -212,13 +212,12 @@
         }
 
         .primary-cta {
-            background-color: var(--secondary);
-            color: white;
+            background-color: var(--white);
+            color: var(--primary);
             box-shadow: var(--shadow);
         }
 
         .primary-cta:hover {
-            background-color: var(--secondary-dark);
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
@@ -257,7 +256,7 @@
             position: absolute;
             width: 50%;
             height: 3px;
-            background-color: var(--secondary);
+            background-color: var(--primary);
             bottom: -10px;
             left: 25%;
         }
@@ -296,7 +295,7 @@
             position: absolute;
             width: 100%;
             height: 5px;
-            background: var(--secondary);
+            background: var(--primary);
             top: 0;
             left: 0;
             z-index: -1;
@@ -311,19 +310,19 @@
         .feature-icon {
             width: 70px;
             height: 70px;
-            background-color: rgba(107, 191, 89, 0.1);
+            background-color: rgba(52, 152, 219, 0.1);
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
-            color: var(--secondary);
+            color: var(--primary);
             font-size: 1.8rem;
             transition: var(--transition);
         }
 
         .feature-card:hover .feature-icon {
-            background-color: var(--secondary);
+            background-color: var(--primary);
             color: var(--white);
             transform: rotateY(360deg);
             transition: transform 0.8s, background-color 0.3s, color 0.3s;
@@ -341,7 +340,7 @@
         }
 
         .feature-link {
-            color: var(--secondary);
+            color: var(--primary);
             text-decoration: none;
             font-weight: 500;
             display: flex;
@@ -360,7 +359,7 @@
         /* About Section */
         .about {
             padding: 100px 0;
-            background-color: #f0f4f8;
+            background-color: #f5f9ff;
             position: relative;
             overflow: hidden;
         }
@@ -419,7 +418,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(74, 111, 165, 0.3) 0%, rgba(107, 191, 89, 0.3) 100%);
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.3) 0%, rgba(46, 204, 113, 0.3) 100%);
             opacity: 0;
             transition: var(--transition);
         }
@@ -445,7 +444,7 @@
             position: absolute;
             width: 70px;
             height: 3px;
-            background-color: var(--secondary);
+            background-color: var(--primary);
             bottom: 0;
             left: 0;
         }
@@ -469,7 +468,7 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
-            color: var(--secondary);
+            color: var(--primary);
             margin-bottom: 5px;
         }
 
@@ -516,7 +515,7 @@
             position: absolute;
             top: -20px;
             left: 20px;
-            color: rgba(74, 111, 165, 0.1);
+            color: rgba(52, 152, 219, 0.1);
             font-family: Georgia, serif;
         }
 
@@ -601,7 +600,7 @@
         /* Contact Section */
         .contact {
             padding: 100px 0;
-            background-color: #f0f4f8;
+            background-color: #f5f9ff;
             position: relative;
         }
 
@@ -642,7 +641,7 @@
             position: absolute;
             width: 50px;
             height: 3px;
-            background-color: var(--secondary);
+            background-color: var(--primary);
             bottom: 0;
             left: 0;
         }
@@ -660,7 +659,7 @@
         .contact-icon {
             width: 50px;
             height: 50px;
-            background-color: rgba(74, 111, 165, 0.1);
+            background-color: rgba(52, 152, 219, 0.1);
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -699,7 +698,7 @@
             position: absolute;
             width: 50px;
             height: 3px;
-            background-color: var(--secondary);
+            background-color: var(--primary);
             bottom: 0;
             left: 0;
         }
@@ -720,11 +719,11 @@
         .form-control:focus {
             outline: none;
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.1);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
         }
 
         .submit-btn {
-            background-color: var(--secondary);
+            background-color: var(--primary);
             color: white;
             border: none;
             padding: 12px 25px;
@@ -736,7 +735,7 @@
         }
 
         .submit-btn:hover {
-            background-color: var(--secondary-dark);
+            background-color: var(--primary-dark);
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
@@ -767,7 +766,7 @@
             position: absolute;
             width: 30px;
             height: 2px;
-            background-color: var(--secondary);
+            background-color: var(--primary);
             bottom: 0;
             left: 0;
         }
@@ -1013,7 +1012,7 @@
 
         .role-card.active {
             border-color: var(--primary);
-            background-color: rgba(74, 111, 165, 0.05);
+            background-color: rgba(52, 152, 219, 0.05);
         }
 
         .role-card:hover {
@@ -1076,7 +1075,7 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: var(--secondary);
+            background-color: var(--primary);
             color: white;
             padding: 15px 25px;
             border-radius: 5px;
@@ -1092,57 +1091,6 @@
         .notification i {
             margin-right: 10px;
             font-size: 1.2rem;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 80px);
-                background-color: var(--white);
-                flex-direction: column;
-                align-items: center;
-                padding-top: 40px;
-                transition: var(--transition);
-            }
-
-            .nav-links.active {
-                left: 0;
-            }
-
-            .nav-links li {
-                margin: 15px 0;
-            }
-
-            .hamburger {
-                display: block;
-            }
-
-            .auth-buttons {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .about-content {
-                flex-direction: column;
-            }
-
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-
-            .about-stats {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -1166,8 +1114,10 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="auth-buttons">
-                    <button><a href="/login/patient" id="login-btn" class="btn">Login patient</a></button>
-                    <button><a href="/login/doctor" id="login-btn" class="btn">Login doctor</a></button>
+                    <button><a href="/login/patient" id="login-btn" class="btn" style="text-decoration: none;">Login patient</a></button>
+                </div>
+                <div class="auth-buttons">
+                    <button><a href="/login/doctor" id="login-btn" class="btn" style="text-decoration: none;">Login doctor</a></button>
                 </div>
             </nav>
         </div>
@@ -1288,284 +1238,162 @@
         <div class="container">
             <div class="section-title">
                 <h2>What People Say</h2>
-                <p>Read what our users have to say about their experience with MediTrack and how it has improved their healthcare management.</p>
-            </div>
-            
-            <div class="testimonial-slider">
-                <div class="testimonial-track">
-                    <div class="testimonial">
-                        <div class="testimonial-content">
-                            <p class="testimonial-text">"MediTrack has completely transformed how I manage my chronic condition. Having all my medical records in one place and getting medication reminders has been life-changing."</p>
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
-                                </div>
-                                <div class="author-info">
-                                    <h4>Sarah Johnson</h4>
-                                    <p>Patient, Diabetes Type 2</p>
-                                </div>
-                            </div>
+                <p>Read what our users have to say about                their experience with MediTrack and how it has improved their healthcare management.
+            </p>
+        </div>
+        <!-- Testimonial slider will be dynamically created by JavaScript -->
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Get in Touch</h2>
+            <p>Have questions or need assistance? Our team is here to help you with any inquiries about MediTrack.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out to us using any of the methods below. We're available Monday through Friday, 9am to 6pm EST.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Our Location</h4>
+                            <p>123 Health Avenue, Boston, MA 02115</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone Number</h4>
+                            <p>+1 (800) 555-MEDI</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email Address</h4>
+                            <p>support@meditrack.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 9am - 6pm EST</p>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-nav">
-                    <button id="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
-                    <button id="next-testimonial"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <div class="testimonial-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Get in Touch</h2>
-                <p>Have questions or need assistance? Our team is here to help you with any inquiries about MediTrack.</p>
             </div>
 
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p>Feel free to reach out to us using any of the methods below. We're available Monday through Friday, 9am to 6pm EST.</p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Our Location</h4>
-                                <p>123 Health Avenue, Boston, MA 02115</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Phone Number</h4>
-                                <p>+1 (800) 555-MEDI</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email Address</h4>
-                                <p>support@meditrack.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Working Hours</h4>
-                                <p>Monday - Friday: 9am - 6pm EST</p>
-                            </div>
-                        </div>
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
                     </div>
-                </div>
-
-                <div class="contact-form">
-                    <h3>Send us a Message</h3>
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="submit-btn">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>MediTrack</h3>
-                    <p style="color: #bbb; margin-bottom: 20px;">Your complete health tracking solution designed to empower patients and healthcare providers.</p>
-                    <div style="display: flex; gap: 15px;">
-                        <a href="#" style="color: var(--primary); background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: var(--transition);">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" style="color: var(--primary); background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: var(--transition);">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" style="color: var(--primary); background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: var(--transition);">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" style="color: var(--primary); background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: var(--transition);">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
                     </div>
-                </div>
-
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
-                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
-                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h3>Features</h3>
-                    <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Medical Records</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Medication Management</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Appointment Scheduling</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Health Analytics</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Doctor-Patient Portal</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h3>Newsletter</h3>
-                    <p style="color: #bbb; margin-bottom: 20px;">Subscribe to our newsletter to receive updates and health tips.</p>
-                    <form>
-                        <div style="display: flex;">
-                            <input type="email" placeholder="Your Email" style="flex: 1; padding: 10px; border: none; border-radius: 5px 0 0 5px;">
-                            <button type="submit" style="background-color: var(--primary); color: white; border: none; padding: 10px 15px; border-radius: 0 5px 5px 0; cursor: pointer;">
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 MediTrack. All Rights Reserved. | <a href="#" style="color: var(--primary); text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: var(--primary); text-decoration: none;">Terms of Service</a></p>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- JavaScript -->
-    <script>
-        // Mobile Navigation
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>MediTrack</h3>
+                <p style="color: #bbb; margin-bottom: 20px;">Your complete health tracking solution designed to empower patients and healthcare providers.</p>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#" style="color: var(--primary); background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: var(--transition);">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" style="color: var(--primary); background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: var(--transition);">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" style="color: var(--primary); background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: var(--transition);">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" style="color: var(--primary); background-color: rgba(255,255,255,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; transition: var(--transition);">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.innerHTML = navLinks.classList.contains('active') ? 
-                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#features"><i class="fas fa-chevron-right"></i> Features</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu if open
-                if (navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-                }
-            });
-        });
+            <div class="footer-column">
+                <h3>Features</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Medical Records</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Medication Management</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Appointment Scheduling</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Health Analytics</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Doctor-Patient Portal</a></li>
+                </ul>
+            </div>
 
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            header.classList.toggle('scrolled', window.scrollY > 50);
-        });
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p style="color: #bbb; margin-bottom: 20px;">Subscribe to our newsletter to receive updates and health tips.</p>
+                <form>
+                    <div style="display: flex;">
+                        <input type="email" placeholder="Your Email" style="flex: 1; padding: 10px; border: none; border-radius: 5px 0 0 5px;">
+                        <button type="submit" style="background-color: var(--primary); color: white; border: none; padding: 10px 15px; border-radius: 0 5px 5px 0; cursor: pointer;">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
-        // Testimonial slider
-        let currentTestimonial = 0;
-        const testimonials = document.querySelectorAll('.testimonial');
-        const dots = document.querySelectorAll('.dot');
+        <div class="footer-bottom">
+            <p>&copy; 2025 MediTrack. All Rights Reserved. | <a href="#" style="color: var(--primary); text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: var(--primary); text-decoration: none;">Terms of Service</a></p>
+        </div>
+    </div>
+</footer>
 
-        function showTestimonial(index) {
-            testimonials.forEach((testimonial, i) => {
-                testimonial.style.display = i === index ? 'block' : 'none';
-            });
-            
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
-            
-            currentTestimonial = index;
-        }
+<!-- Auth Modal -->
+<!-- Will be created dynamically by JavaScript -->
 
-        document.getElementById('next-testimonial').addEventListener('click', () => {
-            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-            showTestimonial(currentTestimonial);
-        });
+// Login Redirect Script
 
-        document.getElementById('prev-testimonial').addEventListener('click', () => {
-            currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
-            showTestimonial(currentTestimonial);
-        });
-
-        dots.forEach((dot, i) => {
-            dot.addEventListener('click', () => {
-                showTestimonial(i);
-            });
-        });
-
-        // Initialize first testimonial
-        showTestimonial(0);
-
-        // Form submission
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            showNotification('Your message has been sent successfully!');
-            this.reset();
-        });
-
-        // Notification function
-        function showNotification(message) {
-            const notification = document.createElement('div');
-            notification.className = 'notification';
-            notification.innerHTML = `<i class="fas fa-check-circle"></i> ${message}`;
-            document.body.appendChild(notification);
-            
-            setTimeout(() => {
-                notification.style.opacity = '1';
-                notification.style.transform = 'translateY(0)';
-            }, 100);
-            
-            setTimeout(() => {
-                notification.style.opacity = '0';
-                notification.style.transform = 'translateY(20px)';
-                setTimeout(() => notification.remove(), 300);
-            }, 3000);
-        }
-
-        // Get Started button
-        document.getElementById('hero-get-started').addEventListener('click', () => {
-            window.location.href = '/signup';
-        });
-    </script>
 </body>
 </html>
